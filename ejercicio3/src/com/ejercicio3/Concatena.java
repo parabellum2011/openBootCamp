@@ -16,16 +16,25 @@ public class Concatena {
 	public static void main(String[] args) {
 
 		String[] nombres = {"Pepe", "Jose", "Antonio", "Maria"};
+		String separador =" ";
 		String cadena ="";
 		String cadenaConcat = "";
 		
 		for ( int i = 0; i<nombres.length; i++) {
-			cadena += nombres[i]+" "; 
-			cadenaConcat = cadenaConcat.concat(nombres[i]).concat(" ");
+			
+			separador =" ";
+			
+			if (i == nombres.length-2) {
+				separador = " y ";
+			}
+			
+			cadena += nombres[i] + separador; 
+
+			cadenaConcat = cadenaConcat.concat(nombres[i]).concat(separador);
 		}
 		
-		System.out.println(cadena);
-		System.out.println(cadenaConcat);
+		System.out.println("concatenacion con +: " + cadena);
+		System.out.println("concatenacion con concat: " + cadenaConcat);
 		
 		
 	}
