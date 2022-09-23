@@ -1,4 +1,4 @@
-package com.ejercicio1.openbootcamp;
+package com.ejercicio1;
 
 public class Ejercicio1 {
 

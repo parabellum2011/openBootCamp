@@ -1,4 +1,4 @@
-package com.ejercicio2.openbootcamp;
+package com.ejercicio2;
 
 public class FuncionIva {
 
